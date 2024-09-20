@@ -1,3 +1,9 @@
 import random2
-r1 = random2.randint(8, 10)
-print("Random number between 0 and 10 is % s" % (r1))
+start = int(input("Use Start number: "))
+end = int(input("Use End number: "))
+if start < end:
+    r1 = random2.randint (start, end)
+    print("Random number between start and end is % s" % (r1))
+else:
+    r1 = random2.randint(end, start)
+    print("Random number between start and end is % s" % (r1))
